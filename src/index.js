@@ -4,33 +4,62 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Home from './components/home-page';
 
 class Root extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      currentpage: <Home />
-    };
+    this.state = {};
   }
 
   componentWillMount() {}
   componentWillUnmount() {}
 
-  setCurrentPage(props) {
-    this.setState({currentpage: props});
-  }
-
   render() {
     return (
-      <div id="root">
-        <div id="nav-bar">
-          <div id="comment" name="This is a navigation bar that will host all the buttons to move between pages."></div>
-          <div id="comment" name="The nav bar will remain static throughout the pages of the webapp."></div>
-          <button onClick={this.setCurrentPage(<Home />)}>Home</button>
-        </div>
-        <div id="comment" name="Below will be the remaining page that will update when the buttons are pressed."></div>
-        {this.state.currentpage}
+      <div>
+        <head>
+          <meta charset="UTF-8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <title> Website Layout | CodingLab</title>
+          <link rel="stylesheet" href="style.css"/>
+        </head>
+        <body>
+          <nav>
+            <div class="menu">
+              <div class="logo">
+                <a href="#">My Portfolio Test Logo</a>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="img"></div>
+          <div class="social-media">
+            <ul>
+              <li><a href="#" name="LinkedIn"></a></li>
+              <li><a href="#" name="Github"></a></li>
+              <li><a href="#" name=""></a></li>
+            </ul>
+          </div>
+          <div class="center">
+            <div class="title">Cort Smith</div>
+            <div class="sub_title">Software & Game Developer</div>
+            <div class="quote">"Give everything or nothing. There is no inbetween."</div>
+            <div class="intro">Aspiring software and game developer.</div>
+            <div class="intro-cont">I've applied my knowledge on contract with Ricoh and the Gaming industry</div>
+            <div class="intro-cont">within my coworkers game studio.</div>
+            
+            <div class="btns">
+              <button>Learn More</button>
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </body>
       </div>
     );
   }

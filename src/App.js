@@ -37,7 +37,6 @@ class App extends React.Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <h1>{this.state.date} | {this.state.time}</h1>
           <a
             className="App-link"
             href="https://reactjs.org"
