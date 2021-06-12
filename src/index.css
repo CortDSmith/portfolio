@@ -35,20 +35,44 @@ nav .menu{
   justify-content: space-between;
   padding: 0 20px;
 }
-.menu .logo a{
+.menu .logo ul a{
   text-decoration: none;
   color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
+.social-media {
+  display: inline-flex;
+  margin-left: 0px;
+}
+.social-media li{
+  list-style: none;
+  margin-left: auto;
+}
+.social-media li a{
+  padding: 0px 5px;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+  align-items: bottom;
+}
+.social-media li a:hover{
+  background: none;
+  color: none;
+}
+.social-media li a img{
+  height: 30px;
+  width: 30px;
+}
+
+
 .menu ul{
   display: inline-flex;
 }
-.menu ul li{
+.menu .tabs{
   list-style: none;
   margin-left: 7px;
 }
-.menu ul li a{
+.menu .tabs a{
   text-decoration: none;
   color: #fff;
   font-size: 18px;
@@ -57,9 +81,10 @@ nav .menu{
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.menu ul li a:hover{
+.menu .tabs a:hover{
   background: #fff;
   color: #000;
+  box-sizing: content-box;
 }
 .img{
   background: url(./assets/images/image.jpg) no-repeat;
@@ -74,6 +99,51 @@ nav .menu{
   position: absolute;
   height: 100%;
   width: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.github{
+  background: url(./assets/images/github-logo.png) no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.github::before{
+  content: '';
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  background: rgba(0,0,0,0.4);
+}
+.linkedin{
+  background: url(./assets/images/linkedin-logo.png) no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.linkedin::before{
+  content: '';
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  background: rgba(0,0,0,0.4);
+}
+.twitter{
+  background: url(./assets/images/twitter-logo.png) no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.twitter::before{
+  content: '';
+  position: absolute;
+  height: 5%;
+  width: 5%;
   background: rgba(0,0,0,0.4);
 }
 .center{
@@ -112,9 +182,25 @@ nav .menu{
   font-size: 20px;
   font-weight: 400;
 }
+
+.intro{
+  word-wrap: break-word;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+
+
+/*btns is currently unused and has been removed from index.js*/
+/*DEPRECATED -- Here for reference.*/
 .center .btns{
   margin-top: 20px;
 }
+/*DEPRECATED -- Here for reference.*/
 .center .btns button{
   height: 55px;
   width: 170px;
@@ -129,10 +215,12 @@ nav .menu{
   outline: none;
   transition: all 0.3s ease;
 }
+/*DEPRECATED -- Here for reference.*/
 .center .btns button:first-child{
   color: #fff;
   background: none;
 }
+/*DEPRECATED -- Here for reference.*/
 .center .btns button:first-child:hover{
   background: #fff;
   color: #000;
