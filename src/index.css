@@ -19,10 +19,12 @@ code {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+  --content-width: 1250;
+  --content-height: 800;
 }
 .main{
-  height: 1366;
-  width: 800;
+  height: var(--content-height);
+  width: var(--content-width);
 }
 .header{
   background: #1b1b1b;
@@ -32,10 +34,10 @@ code {
   z-index: 12;
 }
 .header-menu{
-  max-width: 1250px;
+  max-width: var(--content-width);
   margin: auto;
   display: flex;
-  align-items: center;
+  align-items: center right;
   justify-content: space-between;
   padding: 0 20px;
 }

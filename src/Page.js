@@ -1,7 +1,21 @@
 import React from 'react';
 import './Page.css';
-import Tooltip from './Tooltip';
 
+
+
+class Tooltip extends React.Component {
+    constructor(props, context) {
+        super(props);
+
+        this.state = {};
+    }
+
+    render() {
+        return (
+            <div></div>
+        );
+    }
+}
 
 const Home = () => {
     let title = "Cort Smith";
@@ -33,12 +47,7 @@ const About = () => {
         <div class="about">
             <div class="about-bg">
                 <div class='about-center'>
-                    <div class='about-intro'>
-                        Hello, World!
-                    </div>
-                    <div class="icon-text-box">
-                        <Tooltip />
-                    </div>
+                    <Tooltip />
                 </div>
             </div>
         </div>

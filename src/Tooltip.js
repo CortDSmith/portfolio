@@ -9,7 +9,6 @@ class Tooltip extends React.Component {
         this.state = {
             x: 0,
             y: 0,
-            img: '/assets/images/circle-icon.png',
             text: 'Hello, World!'
         };
 
@@ -21,12 +20,9 @@ class Tooltip extends React.Component {
 
     render() {
         return (
-            <div class='tooltip'>
-                <img id='icon' src={this.state.img}>
-                    <p>
-                        {this.state.text}
-                    </p>
-                </img>
+            <div class='tooltip' x={500} y={500}>
+                <div class='icon'></div>
+                <p class='text'>{this.state.text}</p>
             </div>
         );
     }
