@@ -1,0 +1,18 @@
+.tooltip{
+    position: absolute;
+    z-index: 11;
+}
+.tooltip .icon{
+    background-image: url(/assets/images/circle-icon.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.tooltip .text{
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    bottom: inherit;
+    border: 3px;
+    border-radius: 5px;
+}
