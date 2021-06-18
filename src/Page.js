@@ -1,21 +1,10 @@
 import React from 'react';
 import './Page.css';
 
+import Tooltip from './Tooltip';
 
 
-class Tooltip extends React.Component {
-    constructor(props, context) {
-        super(props);
 
-        this.state = {};
-    }
-
-    render() {
-        return (
-            <div></div>
-        );
-    }
-}
 
 const Home = () => {
     let title = "Cort Smith";
@@ -47,7 +36,15 @@ const About = () => {
         <div class="about">
             <div class="about-bg">
                 <div class='about-center'>
-                    <Tooltip />
+                    <div class='tooltip' style={{left: 400, top: 250}}>
+                        <img id='tooltip-1' src='/assets/images/circle-icon.png'></img>
+                        <div id='tooltip-1-textbox'>
+                            <nav id='tooltip-1-text'>
+                                Hi my name is cort smith and I am a programmer. I've been working with c++ and python
+                                for the past 6 years, developing scripts and software.
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

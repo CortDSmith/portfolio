@@ -5,33 +5,15 @@ import reportWebVitals from './reportWebVitals';
 
 import { Home, About, Projects, Contact, Feedback } from './Page';
 
+import Tooltip from './Tooltip';
+
+/* Text component that splits text onto multiple lines
+by including \n to the text where the new line will begin. */
 const Text = (props) => {
   const text = props.text;
   const textsplit = text.split('\n');
   const textmap = textsplit.map(str => <p>{str}</p>);
   return (textmap);
-}
-const Header = (props) => {
-  let github = "https://github.com/CortDSmith";
-  let linkedin = "https://www.linkedin.com/in/cort-smith-3a833915a/";
-  let twitter = "#";
-
-  // home onClick={()=>this.setState({body: this.page.homepage})}
-  // about onClick={()=>this.setState({body: this.page.aboutpage})}
-
-  /*
-      <li class='tabs'><a href="#" onClick={() => {return (<Home />)}}>Home</a></li>
-      <li class="tabs"><a href="#" onClick={() => {return (<About />)}}>About</a></li>
-      <li class="tabs"><a href="#" onClick={() => {return (<Project />)}}>Project</a></li>
-      <li class="tabs"><a href="#" onClick={() => {return (<Contact />)}}>Contact</a></li>
-      <li class="tabs"><a href="#" onClick={() => {return (<Feedback />)}}>Feedback</a></li>
-  */
-
-  return (
-      <div class="header">
-          
-      </div>
-  );
 }
 
 class Root extends React.Component {

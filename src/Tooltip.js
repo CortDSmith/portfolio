@@ -6,26 +6,21 @@ class Tooltip extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            x: 0,
-            y: 0,
-            text: 'Hello, World!'
-        };
-
-        if (props.x) {this.setState({x: props.x})};
-        if (props.y) {this.setState({x: props.y})};
-        if (props.img) {this.setState({x: props.img})};
-        if (props.text) {this.setState({x: props.text})};
+        this.state = {};
     }
 
     render() {
         return (
-            <div class='tooltip' x={500} y={500}>
-                <div class='icon'></div>
-                <p class='text'>{this.state.text}</p>
+            <div class='tooltip'>
+                <img class='icon' src='/assets/images/circle-icon.png'></img>
+                <nav className='scrollview'>
+                    <p class='text'>
+                        Hello, World!
+                    </p>
+                </nav>
             </div>
         );
     }
 }
 
-export default Tooltip;
+export default Tooltip
