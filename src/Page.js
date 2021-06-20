@@ -37,7 +37,7 @@ const About = () => {
             <div class="about-bg">
                 <div class='about-center'>
                     <div class='tooltip' style={{left: 425, top: 75}}>
-                        <img id='tooltip-1' src='/assets/images/circle-icon.png'></img>
+                        <img id='tooltip-1' src='./assets/images/circle-icon.png'></img>
                         <div id='tooltip-1-textbox'>
                             <nav id='tooltip-1-text'>
                                 Hi my name is cort smith and I am a programmer. I've been working with c++ and python
@@ -46,7 +46,7 @@ const About = () => {
                         </div>
                     </div>
                     <div class='tooltip' style={{left: 850, top: 275}}>
-                        <img id='tooltip-2' src='/assets/images/circle-icon.png'></img>
+                        <img id='tooltip-2' src='./assets/images/circle-icon.png'></img>
                         <div id='tooltip-2-textbox'>
                             <nav id='tooltip-2-text'>
                                 Python and C++ are my expertise. Working with Python, I developed scripts in Blender for rendering images on Amazon EC2 Web Service using Amazon S3 to store the images during render runtime.
@@ -55,7 +55,7 @@ const About = () => {
                         </div>
                     </div>
                     <div class='tooltip' style={{left: 550, top: 400}}>
-                        <img id='tooltip-3' src='/assets/images/circle-icon.png'></img>
+                        <img id='tooltip-3' src='./assets/images/circle-icon.png'></img>
                         <div id='tooltip-3-textbox'>
                             <nav id='tooltip-3-text'>
                                 Since moving, I never finished college, however, I am pursuing my degree through Starbucks' college program with ASU.
