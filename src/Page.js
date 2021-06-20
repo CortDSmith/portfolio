@@ -36,7 +36,7 @@ const About = () => {
         <div class="about">
             <div class="about-bg">
                 <div class='about-center'>
-                    <div class='tooltip' style={{left: 250, top: 75}}>
+                    <div class='tooltip' style={{left: 425, top: 75}}>
                         <img id='tooltip-1' src='/assets/images/circle-icon.png'></img>
                         <div id='tooltip-1-textbox'>
                             <nav id='tooltip-1-text'>
@@ -54,7 +54,7 @@ const About = () => {
                             </nav>
                         </div>
                     </div>
-                    <div class='tooltip' style={{left: 450, top: 400}}>
+                    <div class='tooltip' style={{left: 550, top: 400}}>
                         <img id='tooltip-3' src='/assets/images/circle-icon.png'></img>
                         <div id='tooltip-3-textbox'>
                             <nav id='tooltip-3-text'>
