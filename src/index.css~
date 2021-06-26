@@ -41,6 +41,17 @@ code {
   justify-content: space-between;
   padding: 0 20px;
 }
+.header-logo ul a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center left;
+  justify-content: space-between;
+}
 .header-social-media {
   display: inline-flex;
   margin-left: 0px;

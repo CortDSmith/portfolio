@@ -36,7 +36,7 @@ class Root extends React.Component {
           <nav class="header">
             <div class="header-menu">
               <div class="header-logo" style={{
-	      	
+	      	position: 'absolute',
 	      }}>
                 <ul>
                   <a href="#" name="logo"></a>
