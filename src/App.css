@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* CSS above is for reference only. */
+
+#navbar {
+  display: flex;
+}
+
+#navbar ol {
+  position: absolute;
+  right: 0;
+  list-style: none;
+  display: flex;
+}
+
+#navbar ol li {
+  background-color: grey;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
