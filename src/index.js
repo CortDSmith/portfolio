@@ -30,9 +30,9 @@ class Root extends React.Component {
                 <ul>
                   <a href="#" name="logo"></a>
                   <ul class="header-social-media">
-                    <li><a href="#" name="Github"><div class="github" title="https://github.com/CortDSmith"></div></a></li>
-                    <li><a href="#" name="LinkedIn"><div class="linkedin" title="https://www.linkedin.com/in/cort-smith-3a833915a/"></div></a></li>
-                    <li><a href="#" name="Twitter"><div class="twitter"></div></a></li>
+                    <li class="header-social-media"><a href="#" name="Github"><div class="github" title="https://github.com/CortDSmith"></div></a></li>
+                    <li class="header-social-media"><a href="#" name="LinkedIn"><div class="linkedin" title="https://www.linkedin.com/in/cort-smith-3a833915a/"></div></a></li>
+                    <li class="header-social-media"><a href="#" name="Twitter"><div class="twitter"></div></a></li>
                   </ul>
                 </ul>
               </div>
